@@ -1,0 +1,5 @@
+{
+  "env": {
+    "runtime": "nodejs22.x"
+  }
+}
