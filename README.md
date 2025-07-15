@@ -11,7 +11,35 @@ Currently, two official plugins are available:
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
-# 07/11/25
+# 071125
 
  - Cloned project and went through steps at: [Host a Static Website](https://aws.amazon.com/getting-started/hands-on/host-static-website/)
- - Issue with NPM version while building with Amplify
+ - Issue with NPM version while building with Amplify, no time to troublehsoot.
+
+ # 071525
+
+ - Redeployed with Amplify, but modified YML:
+ 
+    ```
+    version: 1
+    frontend:
+    phases:
+        preBuild:
+        commands:
+            - nvm install 20.19.0
+            - nvm use 20.19.0
+            - node -v
+            - npm -v
+            - npm ci --cache .npm --prefer-offline
+        build:
+        commands:
+            - npm run build
+    artifacts:
+        baseDirectory: dist
+        files:
+        - '**/*'
+    cache:
+        paths:
+        - .npm/**/*
+    ```
+ - This mitigates the build error from Amplify resulting from an older version of NPM
