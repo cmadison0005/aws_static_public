@@ -1,4 +1,3 @@
-
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 
@@ -8,13 +7,12 @@ import Home from './components/Home';
 import Navbar from './components/NavBar';
 
 const App = () => {
-  
 
   return (
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route path="/" element={<Home />} />
         <Route path="/bio" element={<Bio />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
