@@ -43,3 +43,4 @@ If you are developing a production application, we recommend using TypeScript wi
         - .npm/**/*
     ```
  - This mitigates the build error from Amplify resulting from an older version of NPM
+ - Modified sample app to be a navbar header.
