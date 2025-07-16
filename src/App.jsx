@@ -13,8 +13,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <h1>Hey gurl, you know what time it is?</h1>
-      <h2>Don't worry if not, there's a clock below.</h2>
+      <h1>What time is it?</h1>
       <p className="ticker">{dateTime}</p>
     </div>
   )
