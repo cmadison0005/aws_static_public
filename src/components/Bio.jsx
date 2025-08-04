@@ -1,11 +1,22 @@
 import './Bio.css';
+import profilePic from '../assets/bio_image.jpeg';
 
 const Bio = () => {
   return (
     <div className='content-area'>
-      <div className='bio-display'>
-        <h2>About Me</h2>
-        <p>This is the Bio page.</p>
+      <div className="bio-layout">
+        <div className="bio-left">
+          <img src={profilePic} alt="Profile" />
+        </div>
+        <div className="bio-right">
+          <h2>Miss Peaches</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
       </div>
     </div>
   );

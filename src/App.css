@@ -1,11 +1,13 @@
 .content-area {
   padding: 20px;
-  text-align: center; /* Fallback for horizontal centering of text */
-  color: #333;
-  /* background-color: #f8f8f8; */
-  min-height: 150px; /* Ensure enough height for centering */
+  text-align: center;
+  min-height: 150px;
+  /* Ensure enough height for centering */
   display: flex;
-  flex-direction: column; /* Stack children vertically */
-  justify-content: center; /* Center vertically along the column (main axis) */
-  align-items: center; /* Center horizontally along the row (cross axis) */
+  flex-direction: column;
+  /* Stack children vertically */
+  justify-content: center;
+  /* Center vertically along the column (main axis) */
+  align-items: center;
+  /* Center horizontally along the row (cross axis) */
 }

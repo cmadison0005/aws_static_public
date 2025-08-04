@@ -44,3 +44,12 @@ If you are developing a production application, we recommend using TypeScript wi
     ```
  - This mitigates the build error from Amplify resulting from an older version of NPM
  - Modified sample app to be a navbar header.
+
+ # 073025
+
+  - added bg image to pages
+  - added links to git/linked in
+
+# 080425
+
+ - removed contact component in favor of social buttons in navbar
