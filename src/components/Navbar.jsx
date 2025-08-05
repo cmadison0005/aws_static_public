@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import './Navbar.css';
 
 const Navbar = () => {
@@ -20,7 +20,7 @@ const Navbar = () => {
         </div>
         <div className="social-button">
           <a href="https://www.linkedin.com/in/randall-madison-585637146/" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin size={28} />
+            <FaLinkedinIn size={28} />
           </a>
         </div>
       </div>

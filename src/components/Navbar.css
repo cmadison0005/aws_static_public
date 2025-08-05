@@ -32,10 +32,10 @@
 
 .social-buttons-container {
   display: flex;
-  gap: 0.75rem;
-  flex-grow: 0;
-  justify-content: center;
-  align-items: center;
+  gap: 1rem;
+  /* flex-grow: 0; */
+  /* justify-content: center; */
+  /* align-items: center; */
   padding-right: 1rem;
 }
 
@@ -46,7 +46,7 @@
   justify-content: center;
   align-items: center;
   background: transparent;
-  border: 2px solid var(--color-light);
+  /* border: 2px solid var(--color-secondary); */
   border-radius: 50%;
   color: var(--color-text);
   font-size: 1.2rem;
