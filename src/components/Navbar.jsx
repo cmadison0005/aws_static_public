@@ -9,16 +9,20 @@ const Navbar = () => {
 
       <div className="nav-buttons-container">
         <Link to="/" className="nav-button">Home</Link>
-        <Link to="/bio" className="nav-button">Bio</Link>        
+        <Link to="/bio" className="nav-button">Bio</Link>
       </div>
 
       <div className="social-buttons-container">
-        <a href="https://github.com/cmadison0005" target="_blank" rel="noopener noreferrer" className="hover:text-sky-400">
-          <FaGithub size={28} />
-        </a>
-        <a href="https://www.linkedin.com/in/randall-madison-585637146/" target="_blank" rel="noopener noreferrer" className="hover:text-sky-400">
-          <FaLinkedin size={28} />
-        </a>
+        <div className="social-button">
+          <a href="https://github.com/cmadison0005" target="_blank" rel="noopener noreferrer">
+            <FaGithub size={28} />
+          </a>
+        </div>
+        <div className="social-button">
+          <a href="https://www.linkedin.com/in/randall-madison-585637146/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin size={28} />
+          </a>
+        </div>
       </div>
       <div className="call-to-action-container">
         <button

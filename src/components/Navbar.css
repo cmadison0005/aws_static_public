@@ -2,24 +2,29 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  background-color: #232F3E;
-  color: #FFFFFF;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 1rem;
+  border-radius: var(--radius);
+  padding: 1rem 2rem;
+  background:
+    linear-gradient(135deg, rgba(35, 47, 62, .8), rgba(0, 0, 0, .6));
+  color: var(--color-text);
+  box-shadow: var(--shadow);
   flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #FF9900;
-  margin-right: 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
   flex-shrink: 0;
 }
 
 .nav-buttons-container {
   display: flex;
-  gap: 15px;
+  gap: 1rem;
   flex-grow: 1;
   justify-content: center;
   flex-wrap: wrap;
@@ -27,44 +32,73 @@
 
 .social-buttons-container {
   display: flex;
-  gap: 15px;
+  gap: 0.75rem;
+  flex-grow: 0;
   justify-content: center;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.social-button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: 2px solid var(--color-light);
+  border-radius: 50%;
+  color: var(--color-text);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s, border 0.3s;
+}
+
+.social-button:hover {
+  background: var(--color-secondary);
+  border-color: var(--color-secondary);
+  transform: translateY(-2px);
+  color: var(--color-dark);
+}
+
+.social-button a svg {
+  color: var(--color-text);
+}
+.social-button:hover a svg {
+  color: var(--color-dark);
 }
 
 .nav-button {
-  background-color: transparent;
-  border: none;
-  color: #FFFFFF;
-  padding: 8px 15px;
-  font-size: 16px;
+  background: transparent;
+  border: 2px solid transparent;
+  color: var(--color-text);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
   cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  border-radius: var(--radius);
+  transition: background 0.3s, transform 0.2s, border 0.3s;
 }
 
 .nav-button:hover {
-  background-color: #364759;
-}
-
-.call-to-action-container {
-  margin-left: 20px;
-  flex-shrink: 0;
+  background: rgba(255,255,255,0.1);
+  border-color: var(--color-light);
+  transform: translateY(-1px);
 }
 
 .call-to-action-button {
-  background-color: #FF9900;
-  color: #232F3E;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
+  background: var(--color-primary);
+  color: var(--color-dark);
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
   border: none;
-  border-radius: 5px;
+  border-radius: var(--radius);
   cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: var(--shadow);
+  transition: background 0.3s, transform 0.2s;
 }
 
 .call-to-action-button:hover {
-  background-color: #FFA726;
-  transform: translateY(-1px);
+  background: var(--color-primary-hover);
+  transform: translateY(-2px);
 }

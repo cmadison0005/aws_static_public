@@ -1,13 +1,9 @@
 .content-area {
-  padding: 20px;
-  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
   min-height: 150px;
-  /* Ensure enough height for centering */
   display: flex;
   flex-direction: column;
-  /* Stack children vertically */
   justify-content: center;
-  /* Center vertically along the column (main axis) */
   align-items: center;
-  /* Center horizontally along the row (cross axis) */
 }

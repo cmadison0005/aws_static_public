@@ -1,17 +1,64 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  --color-primary: #FF9900;
+  --color-primary-hover: #FFA726;
+  --color-secondary: #009688;
+  --color-dark: #1C1C1C;
+  --color-medium: #2C2C2C;
+  --color-light: #EAEAEA;
+  --color-text: #FFFFFF;
+  --color-text-muted: #CCCCCC;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-  background-image: url('src/assets/constellation_bg.png');
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --radius: 12px;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  line-height: 1.6;
+  color: var(--color-text);
+  background:
+    linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(35, 47, 62, 0.6)),
+    url('src/assets/constellation_bg.png');
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  margin: 0 0 1rem;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+
+p {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 2rem;
 }

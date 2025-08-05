@@ -53,3 +53,6 @@ If you are developing a production application, we recommend using TypeScript wi
 # 080425
 
  - removed contact component in favor of social buttons in navbar
+ - added css layout for 3 panel display in home component
+ - added css layout for 2 column display in bio
+ - added sample images/lorem ipsum content
