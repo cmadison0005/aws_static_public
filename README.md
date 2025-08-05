@@ -56,3 +56,7 @@ If you are developing a production application, we recommend using TypeScript wi
  - added css layout for 3 panel display in home component
  - added css layout for 2 column display in bio
  - added sample images/lorem ipsum content
+
+# 080525
+
+ - added sample Jenkinsfile
