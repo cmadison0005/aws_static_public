@@ -1,8 +1,6 @@
 pipeline {
-    agent {
-        any 
-    }
-
+    agent any
+    
     environment {
         REGISTRY   = "docker.io"
         IMAGE_NAME = "cmadison0005/aws_static_public"
