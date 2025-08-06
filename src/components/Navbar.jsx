@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import './NavBar.css';
 
-const Navbar = () => {
+const NavBar = () => {
   return (
     <div className="header">
       <div className="logo">Astral Enterprises</div>
@@ -36,4 +36,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;
