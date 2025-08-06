@@ -1,6 +1,10 @@
 pipeline {
-    agent any
-    
+    agent {
+        docker { 
+            image 'node:22-bullseye' 
+        } 
+    }
+
     environment {
         REGISTRY   = "docker.io"
         IMAGE_NAME = "cmadison0005/aws_static_public"
