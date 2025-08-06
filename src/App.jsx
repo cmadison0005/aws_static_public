@@ -3,13 +3,13 @@ import './App.css';
 
 import Bio from './components/Bio';
 import Home from './components/Home';
-import Navbar from './components/NavBar';
+import NavBar from './components/NavBar';
 
 const App = () => {
 
   return (
     <>
-      <Navbar />
+      <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/bio" element={<Bio />} />        
