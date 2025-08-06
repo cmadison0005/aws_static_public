@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker { 
             image 'node:22-bullseye'
-            args "-u root -v $WORKSPACE:$WORKSPACE"
+            args "-u root"
         } 
     }
 
