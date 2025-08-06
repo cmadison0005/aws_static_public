@@ -1,7 +1,8 @@
 pipeline {
     agent {
         docker { 
-            image 'node:22-bullseye' 
+            image 'node:22-bullseye'
+            args "-u root -v $HOME:$HOME"
         } 
     }
 
@@ -12,7 +13,7 @@ pipeline {
     }
 
     stages {        
-        
+
         stage('Build App') {
             steps {
                 sh '''
