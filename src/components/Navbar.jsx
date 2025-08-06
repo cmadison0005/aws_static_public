@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import './Navbar.css';
+import './NavBar.css';
 
 const Navbar = () => {
   return (
