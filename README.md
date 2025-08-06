@@ -62,3 +62,7 @@ If you are developing a production application, we recommend using TypeScript wi
  - added sample Jenkinsfile
  - updated jenkins file to install deps
  - renamed Navbar to NavBar for compatibility
+
+ # 080625
+
+  - more work with jenkins
