@@ -11,13 +11,8 @@ pipeline {
         IMAGE_TAG  = "${BUILD_NUMBER}"
     }
 
-    stages {
-        stage('Checkout') {
-            steps {
-                checkout scm
-            }
-        }
-
+    stages {        
+        
         stage('Build App') {
             steps {
                 sh '''
