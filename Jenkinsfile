@@ -10,6 +10,9 @@ pipeline {
     stages {        
 
         stage('Build App') {
+            agent {
+                docker { image 'node:22-bullseye' }
+            }
             steps {
                 sh '''
                   npm ci
