@@ -1,10 +1,5 @@
 pipeline {
-    agent {
-        docker { 
-            image 'node:22-bullseye'
-            args "-u root"
-        } 
-    }
+    agent any
 
     environment {
         REGISTRY   = "docker.io"
