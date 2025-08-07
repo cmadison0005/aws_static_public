@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaDocker } from "react-icons/fa";
 import './NavBar.css';
 
 const NavBar = () => {
@@ -21,6 +21,11 @@ const NavBar = () => {
         <div className="social-button">
           <a href="https://www.linkedin.com/in/randall-madison-585637146/" target="_blank" rel="noopener noreferrer">
             <FaLinkedinIn size={28} />
+          </a>
+        </div>
+        <div className="social-button">
+          <a href="https://hub.docker.com/repositories/cmadison0005" target="_blank" rel="noopener noreferrer">
+            <FaDocker size={28} />
           </a>
         </div>
       </div>
