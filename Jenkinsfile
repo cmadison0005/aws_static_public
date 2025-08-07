@@ -39,5 +39,14 @@ pipeline {
                 }
             }
         }
+
+        stage('Run Docker Container') {
+            steps {
+                sh '''
+                    docker pull ${IMAGE_NAME}:${IMAGE_TAG}
+                    docker run --rm -d --name my-running-container -p 8080:80 ${imageName}:${IMAGE_TAG}
+                '''
+            }
+        }
     }
 }
