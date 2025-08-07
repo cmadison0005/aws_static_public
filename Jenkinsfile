@@ -44,6 +44,7 @@ pipeline {
             steps {
                 sh '''
                     docker pull ${IMAGE_NAME}:${IMAGE_TAG}
+                    docker rm -f aws_static_public || true
                     docker run --rm -d --name aws_static_public -p 80:80 ${IMAGE_NAME}:${IMAGE_TAG}
                 '''
             }
