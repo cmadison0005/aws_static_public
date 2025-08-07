@@ -1,0 +1,28 @@
+.links-layout {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 10rem;
+    padding: 1rem;
+}
+
+.links-left, .links-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.links-left a, .links-right a {
+    color: var(--color-primary);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.links-left a:visited,
+.links-right a:visited {
+    color: var(--color-secondary);
+}
+
+.links-left a:hover,
+.links-right a:hover {
+    color: var(--color-primary-hover);
+}

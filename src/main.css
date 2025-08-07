@@ -1,12 +1,13 @@
 :root {
-  --color-primary: #FF9900;
-  --color-primary-hover: #FFA726;
-  --color-secondary: #009688;
-  --color-dark: #1C1C1C;
-  --color-medium: #2C2C2C;
-  --color-light: #EAEAEA;
+  --color-primary: #009688;
+  --color-primary-hover: #00796B;
+  --color-secondary: #4DB6AC;
+  --color-dark: #002d2a;
+  --color-medium-rgb: 0, 105, 92;
+  --color-medium: #00695C;
+  --color-light: #B2DFDB;
   --color-text: #FFFFFF;
-  --color-text-muted: #CCCCCC;
+  --color-text-muted: #B0BEC5;
 
   --font-heading: 'Montserrat', sans-serif;
   --font-body: 'Inter', sans-serif;

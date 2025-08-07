@@ -4,6 +4,7 @@ import './App.css';
 import Bio from './components/Bio';
 import Home from './components/Home';
 import NavBar from './components/NavBar';
+import Links from './components/Links';
 
 const App = () => {
 
@@ -12,7 +13,8 @@ const App = () => {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/bio" element={<Bio />} />        
+        <Route path="/bio" element={<Bio />} />
+        <Route path="/links" element={<Links />} />
       </Routes>
     </>
   );
