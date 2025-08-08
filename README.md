@@ -65,6 +65,10 @@ If you are developing a production application, we recommend using TypeScript wi
 
  # 080625
 
-  - more work with jenkins to get docker image built and started
-  - added links section
-  - updated css theme colors
+ - more work with jenkins to get docker image built and started
+ - added links section
+ - updated css theme colors
+
+# 080725
+
+ - now hosted at https://randall-madison.com

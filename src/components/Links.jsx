@@ -12,6 +12,7 @@ const Links = () => {
                 <div className='links-right'>
                     <h2>Resources</h2>
                     <a href='https://www.react-icons.com/icons/fa' target="_blank" rel="noopener noreferrer">React Icons</a>
+                    <a href='https://www.hover.dev/css-color-palette-generator' target="_blank" rel="noopener noreferrer">Color Palette Generator</a>
                 </div>                
             </div>
         </div>

@@ -3,7 +3,24 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 8rem;
+  gap: 10rem;
+}
+
+.text-layout {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.text-content {
+  /* display: flex; */
+  padding: 1rem 2rem;
+}
+
+.text-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
 }
 
 /* Each card column */
