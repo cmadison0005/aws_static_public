@@ -4,13 +4,11 @@
   align-items: center;
   margin: 1rem;
   border-radius: var(--radius);
-  padding: 1rem 2rem;
+  padding: .5rem 1rem;
   background:
-    linear-gradient(
-      135deg, 
-      rgba(var(--color-medium-rgb), 0.7), 
-      rgba(0, 0, 0, .8)
-    );
+    linear-gradient(135deg,
+      rgba(var(--color-medium-rgb), 0.7),
+      rgba(0, 0, 0, .8));
   color: var(--color-text);
   box-shadow: var(--shadow);
   flex-wrap: wrap;
@@ -37,9 +35,6 @@
 .social-buttons-container {
   display: flex;
   gap: 1rem;
-  /* flex-grow: 0; */
-  /* justify-content: center; */
-  /* align-items: center; */
   padding-right: 1rem;
 }
 
@@ -68,6 +63,7 @@
 .social-button a svg {
   color: var(--color-text);
 }
+
 .social-button:hover a svg {
   color: var(--color-dark);
 }
@@ -85,13 +81,22 @@
 }
 
 .nav-button:hover {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   border-color: var(--color-primary-hover);
   transform: translateY(-2px);
   /* color: var(--color-light) */
 }
 
+.call-to-action-container {
+  display: flex;
+  gap: 1rem;  
+  /* flex-wrap: wrap; */
+}
+
 .call-to-action-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: var(--color-primary);
   color: var(--color-dark);
   padding: 0.75rem 1.5rem;
@@ -108,4 +113,23 @@
   background: var(--color-primary-hover);
   color: var(--color-text-muted);
   transform: translateY(-2px);
+}
+
+/* Responsive: stack on smaller screens */
+@media (max-width: 900px) {
+  .logo {
+    display: none;
+  }
+
+  .social-buttons-container {
+    display: none;
+    /* flex-grow: 1;
+    justify-content: center;
+    gap: 3.5rem;
+    padding-top: .5rem; */
+  }
+
+  .call-to-action-container {
+    display: none;
+  }
 }

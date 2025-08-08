@@ -1,6 +1,6 @@
 .content-area {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  /* padding-left: 1rem; */
+  /* padding-right: 1rem; */
   min-height: 150px;
   display: flex;
   flex-direction: column;

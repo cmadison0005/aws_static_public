@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { FaGithub, FaLinkedinIn, FaDocker } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaDocker, FaPaypal } from "react-icons/fa";
 import './NavBar.css';
 
 const NavBar = () => {
@@ -33,9 +33,9 @@ const NavBar = () => {
       <div className="call-to-action-container">
         <button
           className="call-to-action-button"
-          onClick={() => console.log('Buy me a drink clicked!')}
-        >
-          Buy Me a Drink
+          onClick={() => window.open('https://paypal.me/cmadison0005', '_blank')}>
+          Buy Me a Drink&nbsp;
+          <FaPaypal size={24} />
         </button>
       </div>
     </div>

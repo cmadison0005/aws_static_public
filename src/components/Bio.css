@@ -1,7 +1,7 @@
 .bio-layout {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem;
   padding-top: 1rem;
 }
 
@@ -15,6 +15,7 @@
 .bio-left img {
   width: 100%;
   max-width: 650px;
+  max-height: 650px;
   height: auto;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -23,7 +24,7 @@
 .bio-right {
   flex-direction: column;
   justify-content: center;
-  padding: 2rem;
+  padding: 1rem 2rem;
   color: var(--color-text);
 }
 
