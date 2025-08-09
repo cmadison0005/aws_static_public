@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         REGISTRY   = "docker.io"
-        IMAGE_NAME = "cmadison0005/aws_static_public"
+        IMAGE_NAME = "cmadison0005/static_public"
         IMAGE_TAG  = "${BUILD_NUMBER}"
     }
 
@@ -44,8 +44,8 @@ pipeline {
             steps {
                 sh '''
                     docker pull ${IMAGE_NAME}:${IMAGE_TAG}
-                    docker rm -f aws_static_public || true
-                    docker run --rm -d --name aws_static_public -p 80:80 ${IMAGE_NAME}:${IMAGE_TAG}
+                    docker rm -f static_public || true
+                    docker run --rm -d --name static_public -p 80:80 ${IMAGE_NAME}:${IMAGE_TAG}
                 '''
             }
         }
